@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Leasing Calculator</h1>
+                <h2>Lease Rental calculator for equipment supplied by Exertis Micro P</h2>
+                <p>
+                    Micro-P's  Lease Desk offer competitive and flexible leasing solutions making it easy for your customers to fund the equipment you are selling.
+                    Whether the financial solution required is on a transaction-by-transaction basis or a fully supported finance program we have a range of funding options to suit you.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Example row of columns -->
+
+
+            <div class="row">
+                <h2>Monthly Rental (ex VAT)</h2>
+                <table class="table" id="leasetable">
+                    <thead>
+                        <tr>
+                            <th class="col-md-3">Total Sales Value</th>
+                            <th class="col-md-3">2 years</th>
+                            <th class="col-md-3">3 years</th>
+                            <th class="col-md-3">4 years</th>
+                            <th class="col-md-3">5 years</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="input-group" id="amount">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-gbp"></span></span>
+                                    <input type="number" class="form-control input-lg" placeholder="How much?" data-bind="value: amountToFinance, valueUpdate: 'afterkeydown', attr: { min: minAllowed, max: maxAllowed}" autofocus>
+                                    <span data-bind='visible: amountToFinance.hasError, text: amountToFinance.validationMessage'>
+                                </div>
+
+                            </td>
+
+                            <td class="col-md-2 col-md-offset-1 monthlyamount">&pound;<span data-bind="text: monthlyRental2yrs" data-toggle="tooltip" data-placement="bottom" title="if leased for 2 years"> </span><small>/mo</small></td>
+                            <td class="col-md-2 monthlyamount">&pound;<span data-bind="text: monthlyRental3yrs" data-toggle="tooltip" data-placement="bottom" title="if leased for 3 years"> </span><small>/mo</small></td>
+                            <td class="col-md-2 monthlyamount">&pound;<span data-bind="text: monthlyRental4yrs" data-toggle="tooltip" data-placement="bottom" title="if leased for 4 years"> </span><small>/mo</small></td>
+                            <td class="col-md-2 monthlyamount">&pound;<span data-bind="text: monthlyRental5yrs" data-toggle="tooltip" data-placement="bottom" title="if leased for 5 years"> </span><small>/mo</small></td>
+                        </tr>
+                </table>
+            </div>
+            <div class="row">
+                <h2>Notes</h2>
+                <ul class="small">
+                    <li>Rentals are monthly in Advance by Direct Debit Mandate.
+                    <li>Other profiles and terms available on request.
+                    <li>All quotations are subject to credit clearance of the end-user by Micro P's appointed finance partners.
+                    <li>Installation configuration and all up front costs can be included.
+                    <li>A formal acceptance will be issued upon credit clearance of the end customer  and commercial terms have been issued to you.
+                    <li>Rates will vary depending on the size of the order and the credit worthiness of the end user.
+                    <li>All prices exclude VAT.
+                    <li>Leasing Account credit lines to Match Credit Account, subject to approval.
+                    <li>Option to Purchase Title at the end of the lease period .
+                    <li>Minimum total sales value is £1,000.00 +VAT and no upper limit.
+                    <li>Applications with a sales value over £25,000, local authorities and blue chip companies please contact Samuel.mcshane@micro-p.com and copy in your Micro-P account manager.
+                    <li>Email proposals to Samuel.McShane@micro-p.com and copy in your account manager.
+                    <li>Please  include customer details, basic equipment details, the preferred term and the end customer sales value with your proposal
+                    <li>one off transactions and
+                    <li>Please contact us for more information about the leasing solutions offered by the Micro P's Lease Desk.
+                </ul>
+            </div>
+
+
+            <div class="row">
+            </div>
+
+
+            <div class="row">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Contact</h3>
+                    </div>
+                    <div class="panel-body">
+                        <address>
+                            Sam McShane<br>
+                            Micro P Lease Desk<br>
+                            Email: samuel.mcshane@micro-p.com<br>
+                            Email: leasedesk@micro-p.com<br>
+                            Mobile: 07796 991 999
+                        </address>
+                    </div>
+                </div>
+            </div>
+
+
+            <hr>
+
+            <footer>
+                <p>&copy; Exertis Micro P 2014</p>
+            </footer>
+        </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>');</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script src="js/libs/knockout-2.2.1/knockout-min.js"></script>
+
+        <script src="js/leasingcalculator.ko.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b, o, i, l, e, r) {
+                b.GoogleAnalyticsObject = l;
+                b[l] || (b[l] =
+                        function() {
+                            (b[l].q = b[l].q || []).push(arguments)
+                        });
+                b[l].l = +new Date;
+                e = o.createElement(i);
+                r = o.getElementsByTagName(i)[0];
+                e.src = '//www.google-analytics.com/analytics.js';
+                r.parentNode.insertBefore(e, r)
+            }(window, document, 'script', 'ga'));
+            ga('create', 'UA-XXXXX-X');
+            ga('send', 'pageview');
+        </script>
+    </body>
+</html>

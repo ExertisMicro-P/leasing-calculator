@@ -1,0 +1,38 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+td.monthlyamount {
+    font-weight: bold;
+    font-size: 2em;
+    vertical-align: bottom;
+    padding-top: 13px !important;
+}
+
+
+#leasetable small{
+    font-size: 0.5em;
+}
+
+#leasetable tbody td {
+    cursor: help;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
